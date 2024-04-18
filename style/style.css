@@ -265,3 +265,74 @@ body {
     right: 30px;
     cursor: pointer;
 }
+/* FORMS */
+
+.containerMain {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.containerForm {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.formContainer {
+    width: 70%;
+    margin: 0 auto; /* Center the container */
+}
+
+.formContainer form {
+    width: 100%; /* Set to 100% to fill the container */
+    padding: 20px;
+    background:#f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.containerForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerForm .form-group {
+    margin-bottom: 20px;
+}
+
+.containerForm label {
+    display: block;
+    font-weight: bold;
+}
+
+.containerForm input[type="text"],
+.containerForm input[type="email"],
+.containerForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background:#f2f2f2;
+    border-radius: 5px;
+}
+
+.containerForm textarea {
+    resize: vertical;
+}
+
+.containerForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.containerForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
