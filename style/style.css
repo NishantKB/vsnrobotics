@@ -78,6 +78,40 @@ body {
     height: 100%;
     width: 100%;
 }
+.slideContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 59px;
+    font-weight: bold;
+}
+
+.aswiper-slide {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Set the maximum height as per your requirement */
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.responsiveImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translateY(-30%);
+    filter: brightness(0.5);
+}
 
 /* Swiper pagination styles */
 .swiper-pagination {
