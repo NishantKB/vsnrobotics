@@ -245,6 +245,40 @@
         </footer>        
 
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            loop: true,
 
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryItems = document.querySelectorAll('.galleryItem');
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImage = document.querySelector('.lightboxImage');
+            const closeBtn = document.querySelector('.close');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    console.log("block")
+                    const imgSrc = item.querySelector('img').src;
+                    lightboxImage.src = imgSrc;
+                    lightbox.style.display = 'flex';
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                console.log("none")
+                lightbox.style.display = 'none';
+            });
+        });
+
+    </script>
 </body>
 </html>
