@@ -336,3 +336,73 @@ body {
 .containerForm button[type="submit"]:hover {
     background-color: #0056b3;
 }
+/* About Us */
+
+.containerAbout {
+    padding: 40px;
+}
+.acontainerAbout {
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.acontainerAbout h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+}
+
+.containerAbout h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+}
+
+.aboutContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutImage {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.aboutImage img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.aboutImage img:hover {
+    transform: scale(1.05);
+}
+
+.aboutText {
+    flex: 2;
+}
+
+.aboutText p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btnLearnMore {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnLearnMore:hover {
+    background-color: #0056b3;
+}
