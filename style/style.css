@@ -406,3 +406,87 @@ body {
 .btnLearnMore:hover {
     background-color: #0056b3;
 }
+
+/* Footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footerLogo h3 {
+    margin-left: 10px;
+}
+
+.footerLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLinks ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footerLinks ul li:last-child {
+    margin-right: 0;
+}
+
+.footerLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footerLinks ul li a:hover {
+    color: #007bff;
+}
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: auto; 
+}
+.footerSocial ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerSocial ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footerSocial ul li:last-child {
+    margin-right: 0;
+}
+
+.footerSocial ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footerSocial ul li a:hover {
+    color: #007bff;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 20px;
+}
