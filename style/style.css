@@ -58,6 +58,7 @@ body {
 .nav a:hover {
     color: #007bff; /* Change color on hover */
 }
+
 /* Slider styles */
 .frontSlider {
     margin-bottom: 20px;
@@ -73,10 +74,10 @@ body {
     height: 90vh;
     border: 1px solid #ccc;
 }
-
-.swiper-slide img {
+.swiper-slide img{
     height: 100%;
     width: 100%;
+
 }
 .slideContent {
     position: absolute;
@@ -96,10 +97,11 @@ body {
     font-weight: bold;
 }
 
+
 .aswiper-slide {
     max-width: 100%;
     height: auto;
-    max-height: 400px; /* Set the maximum height as per your requirement */
+    max-height: 400px;
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -155,6 +157,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
+
+
 /* Notice Board */
 
 /* ContainerNotice styles */
@@ -237,6 +241,7 @@ body {
 .articleDate {
     margin-bottom: 5px;
 }
+
 /* Gallery */
 
 .containerPhotos {
@@ -299,6 +304,7 @@ body {
     right: 30px;
     cursor: pointer;
 }
+
 /* FORMS */
 
 .containerMain {
@@ -370,6 +376,8 @@ body {
 .containerForm button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+
 /* About Us */
 
 .containerAbout {
@@ -440,6 +448,7 @@ body {
 .btnLearnMore:hover {
     background-color: #0056b3;
 }
+
 
 /* Footer */
 
