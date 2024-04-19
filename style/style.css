@@ -157,6 +157,25 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .swiper-slide {
+        height: 50vh; /* Reduced height for smaller devices */
+    }
+
+    .slideContent {
+        font-size: 24px; /* Smaller font size for readability on smaller screens */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .frontSlider {
+        margin-bottom: 10px; /* Reduced margin to reduce space */
+    }
+
+    .containerAbout {
+        padding: 20px; /* Reduced padding to reduce space */
+    }
+}
 
 
 /* Notice Board */
@@ -449,7 +468,38 @@ body {
     background-color: #0056b3;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    
+    .acontainerAbout h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: #333;
+    }
 
+    .aboutImage {
+        margin-bottom: 10px;
+        
+    }
+    .aboutImage img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .aboutText p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btnLearnMore {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
 /* Footer */
 
 .footer {
@@ -533,7 +583,41 @@ body {
     text-align: center;
     margin-top: 20px;
 }
- /* about us*/
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .formContainer {
+        width: 100%;
+    }
+
+    .containerForm button[type="submit"] {
+        width: 100%;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerLinks ul {
+        margin-bottom: 20px;
+    }
+
+    .footerLinks ul li {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .footerSocial ul {
+        margin-top: 20px;
+    }
+
+    .footerSocial ul li {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+}
+
+ /* About Us Different Page*/
  .executive {
     max-width: 800px;
     margin: 0 auto;
@@ -575,6 +659,10 @@ body {
     margin-top: 40px;
 } */
 
+
+.memberBox:hover {
+    transform: scale(1.05);
+}
 
 .memberBox {
     width: calc(33.33% - 20px);
@@ -651,4 +739,24 @@ body {
     text-align: center;
     margin-top: 10px;
     color: #4c5253;
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .memberBox {
+        width: calc(100% - 20px);
+        margin: 0 10px 20px 10px;
+    }
+    .memberBoxlast {
+        width: calc(100% - 20px);
+        margin: 0 10px 20px 10px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .position {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 12px;
+    }
 }
