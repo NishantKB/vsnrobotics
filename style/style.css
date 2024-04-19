@@ -509,7 +509,7 @@ body {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 768px){
     
     .acontainerAbout h1 {
         text-align: center;
@@ -517,11 +517,23 @@ body {
         font-size: 20px;
         color: #333;
     }
+     .aboutContent {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .aboutImage {
-        margin-bottom: 10px;
-        
+        margin-left:50px;
+        margin-bottom: 20px;
+         display: flex;
+        justify-content: center; 
+        align-items: center; 
     }
+
+    .aboutText {
+        text-align: center;
+    }
+    
     .aboutImage img {
         width: 100%;
         border-radius: 8px;
