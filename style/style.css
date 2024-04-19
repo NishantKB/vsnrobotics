@@ -61,7 +61,7 @@ body {
 /* Slider styles */
 .frontSlider {
     margin-bottom: 20px;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .swiper-slide {
@@ -582,4 +582,22 @@ body {
     margin: 0 auto; /* Center horizontally */
     margin-bottom: 40px;
     margin-top: 40px;
+}
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #101218;
+}
+
+.position {
+    font-size: 18px;
+    color: #4c5253;
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #4c5253;
 }
