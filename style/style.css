@@ -224,6 +224,10 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+
 }
 
 .noticeTitle {
