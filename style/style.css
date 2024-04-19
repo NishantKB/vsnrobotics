@@ -782,6 +782,10 @@ body {
     margin: 0 10px 20px 10px; 
 
 }
+.memberBoxlast:hover {
+    transform: scale(1.05);
+}
+
 
 /* .memberBox {
     width: 300px;
