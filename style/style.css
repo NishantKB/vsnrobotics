@@ -17,7 +17,11 @@ body {
 .containerAbout {
     padding: 20px;
 }
-
+@media only screen and (max-width: 768px) {
+    .containerAbout {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
 /* Navbar styles */
 #navbar {
     display: flex;
@@ -77,8 +81,20 @@ body {
 .swiper-slide img{
     height: 100%;
     width: 100%;
-
 }
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+    .swiper-slide {
+        height: auto !important; /* Adjust height based on image aspect ratio */
+    }
+    .swiper-slide img {
+        height: auto !important;
+        width: 100%;
+        object-fit: contain; /* or 'scale-down' */
+    }
+}
+
+
 .slideContent {
     position: absolute;
     top: 50%;
@@ -139,7 +155,7 @@ body {
     cursor: pointer;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
     left: 10px;
 }
 
@@ -148,7 +164,7 @@ body {
 }
 
 /* Swiper scrollbar styles */
-.swiper-scrollbar {
+/* .swiper-scrollbar {
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -156,22 +172,21 @@ body {
     height: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-}
+} */ 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-    .swiper-slide {
-        height: 50vh; /* Reduced height for smaller devices */
+
+    .aswiper-slide {
+        max-height: none;
     }
 
+    .responsiveImage {
+        transform: translateY(0);
+    }
     .slideContent {
-        font-size: 24px; /* Smaller font size for readability on smaller screens */
-        padding: 10px; /* Reduced padding */
+        font-size: 24px;  
+        padding: 10px; 
     }
-
-    .frontSlider {
-        margin-bottom: 10px; /* Reduced margin to reduce space */
-    }
-
     .containerAbout {
         padding: 20px; /* Reduced padding to reduce space */
     }
