@@ -260,7 +260,32 @@ body {
 .articleDate {
     margin-bottom: 5px;
 }
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+    .noticeContainer {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .highlightArticle {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .articleImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .articleInfo {
+        margin-bottom: 20px;
+    }
+
+    .articleList {
+        flex-basis: 100%;
+    }
+}
 /* Gallery */
 
 .containerPhotos {
