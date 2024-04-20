@@ -251,12 +251,16 @@ body {
 }
 
 
+
 /* HighlightArticle */
 .highlightArticle {
     flex-basis: 45%; /* Adjust width of the highlight article */
     margin-right: 40px;
     margin-left:20px;
 }
+/* .highlightArticle:hover{
+    transform: scale(1.1);
+} */
 
 .articleImage img {
     width: 100%;
@@ -298,11 +302,16 @@ body {
 
 .readMoreButton:hover {
     background-color: #0056b3;
+    transform: scale(1.03);
+
 }
 
 /* ArticleList styles */
 .articleList {
     flex-basis: 35%; /* Adjust width of the article list */
+}
+.articleItem:hover{
+    transform: scale(1.1);
 }
 
 .articleItem {
@@ -311,7 +320,8 @@ body {
     border-radius: 8px; /* Add rounded corners */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+    transform: scale(1.05);
+
 }
 
 .articleName {
