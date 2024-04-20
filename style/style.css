@@ -240,8 +240,10 @@ body {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 20px;
+    border-radius: 8px;
+
 }
 
 
@@ -255,6 +257,7 @@ body {
 .articleImage img {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
  
 }
 
@@ -262,16 +265,21 @@ body {
 .articleInfo {
     background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .articleTitle {
     margin-bottom: 10px;
     font-size: 1.5em;
+    color: #333;
+
 }
 
 .articlePublished {
     margin-bottom: 10px;
+    color: #666;
+
 }
 
 .readMoreButton {
@@ -295,15 +303,23 @@ body {
 
 .articleItem {
     margin-bottom: 20px;
+    background-color: #fff; /* Add background color to article items */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .articleName {
     font-size: 1.2em;
     margin-bottom: 5px;
+    color: #333;
+
 }
 
 .articleDate {
     margin-bottom: 5px;
+    color: #666;
+
 }
 /* Media query for mobile */
 @media only screen and (max-width: 768px) {
