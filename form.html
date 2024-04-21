@@ -37,6 +37,20 @@
         }
     </script> -->
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+    }
+
+        body {
+            display: flex;
+            flex-direction: column;
+             min-height: 100vh; 
+    }
+
+        .content-wrap {
+             flex: 1; 
+    }
         .noFormsMessage {
             text-align: center;
             font-size: 36px;
@@ -53,34 +67,24 @@
     </style>
 </head>
 <body>
-    <section id="home">
-        <div class="containerHome">
-            <nav id="navbar">
-                <h1 class="title"><img src="images/logo.png" alt=""></h1>
-                <ul class="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="#notice">Notice/Post</a></li>
-                    <li><a href="#photos">Photos</a></li>
-                    <li><a href="form.html">Forms</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                </ul>
-            </nav>
             
-            <div class="frontSlider">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                     <div class="swiper-slide" style="background-color: #f2f2f2; border: none; border-top: 1px solid #ccc;">
-                        <div class="noFormsMessage">There are no forms available right now</div>
-
-                        <!-- <img src="images/banner.svg" alt="Banner Image"> -->
-                    </div> 
+            <div class="content-wrap">
+                <section id="home">
+                    <div class="containerHome" style="background-color: #f2f2f2; border: none; border-bottom: 1px solid #ccc;">
+                        <nav id="navbar" >
+                            <h1 class="title"><img src="images/logo.png" alt=""></h1>
+                            <ul class="nav" >
+                                <li><a href="">Home</a></li>
+                                <li><a href="#notice">Notice/Post</a></li>
+                                <li><a href="#photos">Photos</a></li>
+                                <li><a href="#form">Forms</a></li>
+                                <li><a href="/aboutus.html">About Us</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                </div>
-            </div>
         </div>
+        <div class="noFormsMessage">There are no forms available right now</div>
+    </div>
         <footer class="footer">
             <div class="footerContainer">
                 <div class="footerLogo">
