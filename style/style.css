@@ -161,25 +161,18 @@ body {
     font-size: 59px;
     font-weight: bold;
 }
-
-
-.aswiper-slide {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-}
-
 .responsiveImage {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transform: translateY(-30%);
-    filter: brightness(0.5);
 }
 
+.fresponsiveImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.2);
+}
 /* Swiper pagination styles */
 .swiper-pagination {
     position: absolute;

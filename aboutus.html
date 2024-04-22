@@ -13,6 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <script src="Js/main.js"></script>
     <script src="https://kit.fontawesome.com/27061a3f4a.js" crossorigin="anonymous"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".swiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000, // Auto-swap interval in milliseconds (2 seconds)
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});
+</script>
+
 </head>
 <body>
     <section id="home">
@@ -33,16 +55,50 @@
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="aswiper-slide">
-                        <div class="slideContent">
-                            <h2>About Us</h2>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slideContent">
+                                <h2>About Us</h2>
+                            </div>
+                            <img src="images/gallery/gallery13.jpeg" alt="image 13" class="fresponsiveImage">
                         </div>
-                        <img src="images/gallery/gallery3.jpeg" alt="Image" class="responsiveImage">
+                        <div class="swiper-slide">
+                            <div class="slideContent">
+                                <h2>About Us</h2>
+                            </div>
+                            <img src="images/gallery/gallery20.JPG" alt="image 20" class="fresponsiveImage">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slideContent">
+                                <h2>About Us</h2>
+                            </div>
+                            <img src="images/gallery/gallery16.jpeg" alt="image 16" class="fresponsiveImage">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slideContent">
+                                <h2>About Us</h2>
+                            </div>
+                            <img src="images/gallery/gallery14.jpeg" alt="image 14" class="fresponsiveImage">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slideContent">
+                                <h2>About Us</h2>
+                            </div>
+                            <img src="images/gallery/gallery18.jpeg" alt="image 18" class="fresponsiveImage">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slideContent">
+                                <h2>About Us</h2>                            </div>
+                            <img src="images/gallery/gallery3.jpeg" alt="image 3" class="fresponsiveImage">
+                        </div>
                     </div>
-                    </div>
+                    <div class="swiper-pagination" style="display: none;"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev" style="display: none;"></div>
+                    <div class="swiper-button-next" style="display: none;"></div>
                 </div>
             </div>
+            
         </div>
         <div class="acontainerAbout" id="about">
             <h1>About Us</h1>
