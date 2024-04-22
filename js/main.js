@@ -14,6 +14,11 @@ galleryItems.forEach(item => {
 closeBtn.addEventListener('click', () => {
     lightbox.style.display = 'none';
 });
+function toggleNav() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('show');
+}
+
 // function sendMail() {
 //     let params = {
 //         name: document.getElementById("name").value,
@@ -27,3 +32,4 @@ closeBtn.addEventListener('click', () => {
 //         alert("Failed to send email. Error: " + error);
 //     });
 // }
+
