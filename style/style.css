@@ -220,13 +220,15 @@ body {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
 
-    .aswiper-slide {
+    .swiper-slide {
         max-height: none;
     }
 
     .responsiveImage {
         transform: translateY(0);
     }
+
+    
     .slideContent {
         font-size: 24px;  
         padding: 10px; 
@@ -236,6 +238,7 @@ body {
     }
 }
 
+  
 
 /* Notice Board */
 
@@ -314,7 +317,7 @@ body {
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0 0 8px 8px;
     transition: background-color 0.3s ease;
 }
 
