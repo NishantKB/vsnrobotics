@@ -10,7 +10,9 @@ html {
 }
 /* Body styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     background-color: #f2f2f2;
 }
 
@@ -655,7 +657,7 @@ body {
 .footerLinks ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
 }
 
 .footerLinks ul li {
@@ -796,7 +798,7 @@ body {
 
 .memberBox {
     width: calc(33.33% - 20px);
-    height: 350px; 
+    height: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -819,7 +821,7 @@ body {
 
 .memberBoxlast {
     width: calc(33.33% - 20px);
-    height: 350px; 
+    height: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -874,6 +876,7 @@ body {
     margin-top: 10px;
     color: #4c5253;
 }
+
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
