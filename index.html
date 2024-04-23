@@ -39,9 +39,9 @@
         }
     </script>
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-<script>
+<!-- <script>
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper", {
     loop: true,
@@ -56,11 +56,22 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-prev",
     },
   });
-});
+}); -->
 </script>
 
 </head>
 <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="mclose">&times;</span>
+            <div class="modal-title">VSN Robotics</div>
+            <p>Welcome | VSN Robotics</p>
+             <!-- <img src="" alt="Image" style="max-width: 100%;"> -->
+            <!-- <a href="forms.html" class="readMoreButton">Read More</a> -->
+        </div>
+    </div>
     <section id="home">
         <div class="containerHome">
             <nav id="navbar">
@@ -74,11 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li><a href="aboutus.html">About Us</a></li>
                 </ul>
             </nav>
-            <div class="frontSlider">
+            <!-- <div class="frontSlider"> -->
                 <!-- Slider main container -->
-                <div class="swiper">
+                <!-- <div class="swiper"> -->
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                    <!-- <div class="swiper-wrapper"> -->
                     <!-- Slides -->
                     <div class="swiper-slide"><img src="images/banner.svg" alt="Banner Image"></div>
                     <!-- <div class="swiper-slide"><img src="images/gallery/gallery16.jpeg" alt="image 2"  class="responsiveImage"></div>
@@ -86,15 +97,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="swiper-slide"><img src="images/gallery/gallery18.jpeg" alt="image 2"  class="responsiveImage"></div>
                     <div class="swiper-slide"><img src="images/gallery/gallery3.jpeg" alt="image 2"  class="responsiveImage"></div> -->
 
-                    </div>
+                    <!-- </div>
                     <div class="swiper-pagination" style="display: none;"></div>
         
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev" style="display: none;"></div>
+                     If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev" style="display: none;"></div>
                     <div class="swiper-button-next" style="display:none"></div>
                 </div>
             </div>
-        </div>
+        </div> --> 
         
         <div class="containerNotice" id="notice">
             <h1 class="noticeTitle">Notice/Post Board</h1>
@@ -279,8 +290,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </footer>        
 
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- <script type="module">
         const swiper = new Swiper('.swiper', {
             loop: true,
 
@@ -290,7 +301,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 prevEl: '.swiper-button-prev',
             },
             });
-    </script>
+    </script> -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("mclose")[0];
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        
+        // Open the modal when the page is loaded
+        window.onload = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const galleryItems = document.querySelectorAll('.galleryItem');
