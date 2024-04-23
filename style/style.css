@@ -111,7 +111,44 @@ body {
         margin: 5px 0;
     }
 }
+/* Default modal styles */
+.modal-dialog {
+    max-width: 800px; 
+}
+.modal-title {
+    font-size: 24px; 
+    color: #333; 
+    text-align: center; 
+}
+/* Default text styles */
+.modal-body p {
+    font-size: 16px; 
+    color: #333; 
+    text-align: center; 
+}
 
+
+/* Media query for desktop devices */
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: calc(100% - 20px); 
+        margin: 100px auto 50px; 
+    }
+    .modal-body p {
+        font-size: 14px; /
+    }
+    .modal-title {
+        font-size: 20px; 
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: calc(100% - 20px); /* Adjust as needed */
+        margin: 50px auto; /* Adjust as needed */
+    }
+}
 
 
 /* Slider styles */
