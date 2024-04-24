@@ -95,11 +95,16 @@ body {
 .nav {
     list-style-type: none;
     display: flex;
+    
+}
+.nav a {
+    padding: 0 10px;
 }
 
+
 .nav li {
-    margin-right: 20px;
-    transition: transform 0.3s ease; /* Added transition */
+    margin-right: 20px; 
+    transition: transform 0.3s ease; 
 }
 
 .nav li:hover {
@@ -159,6 +164,9 @@ body {
         margin-right: 3px; 
     } */
 }
+    .nav a{
+        padding: 0;
+    }
     .nav.show {
         display: flex;
     }
