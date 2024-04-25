@@ -164,9 +164,7 @@ body {
         margin-right: 3px; 
     } */
 }
-    .nav a{
-        padding: 0;
-    }
+
     .nav.show {
         display: flex;
     }
