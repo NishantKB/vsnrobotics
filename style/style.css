@@ -122,8 +122,25 @@ body {
 
 .nav li:hover {
     transform: translateY(-3px); /* Added hover effect */
+    
 }
-
+.nav li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .nav a {
     text-decoration: none;
     color: #333;
@@ -816,9 +833,10 @@ body {
 .footerBottom {
     text-align: center;
     margin-top: 20px;
+    
 }
 /* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 842px) {
     .formContainer {
         width: 100%;
     }
@@ -999,4 +1017,35 @@ body {
     .description {
         font-size: 12px;
     }
+}
+.elementor-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.elementor-heading-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.elementor-widget-text-editor p {
+    margin-bottom: 20px;
+}
+
+.elementor-widget-text-editor h4 {
+    margin-bottom: 10px;
+}
+
+.elementor-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.elementor-button:hover {
+    background-color: #0056b3;
 }
