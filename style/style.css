@@ -354,7 +354,163 @@ body {
     }
 }
 
-  
+
+/* What is VSN Robotics */
+.containerx {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+
+.left-section{
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 20px;
+    flex: 1; /* Added to make the sections take equal space */
+}
+.right-section {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+    flex: 1; /* Added to make the sections take equal space */
+}
+
+.h2v,
+.h3v {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pv {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.containerImage img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .containerx {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .left-section,
+    .right-section {
+        flex: 1;
+        text-align: left;
+        margin: 0 20px;
+    }
+
+    .right-section {
+        padding-left: 0;
+    }
+}
+.containerImage {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.containerImage img {
+    width: 100%;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
+}
+/* Why VSN Robotics */
+.containerx {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+.left-section{
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 20px;
+    flex: 1; /* Added to make the sections take equal space */
+}
+.right-section {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+    flex: 1; /* Added to make the sections take equal space */
+}
+
+.h2v,
+.h3v {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pv {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.containerImage img:hover {
+    transform: scale(1.05);
+}
+
+.containerImage {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.containerImage img {
+    width: 100%;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
+}
+/* Media tag for mobile */
+
+@media (max-width: 768px) {
+    .containerx {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .left-section,
+    .right-section {
+        flex: 1;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .right-section {
+        padding-left: 0;
+    }
+    
+    .containerImage {
+        margin-left:50px;
+        margin-bottom: 20px;
+         display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+
+    .containerImage img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+}
+
 
 /* Notice Board */
 
@@ -1017,35 +1173,4 @@ body {
     .description {
         font-size: 12px;
     }
-}
-.elementor-section {
-    padding: 50px 0;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-.elementor-heading-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.elementor-widget-text-editor p {
-    margin-bottom: 20px;
-}
-
-.elementor-widget-text-editor h4 {
-    margin-bottom: 10px;
-}
-
-.elementor-button {
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.elementor-button:hover {
-    background-color: #0056b3;
 }
