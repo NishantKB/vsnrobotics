@@ -372,29 +372,34 @@ body {
     margin-top: 40px;
     text-align: center;
     margin-left: 20px;
-    flex: 1; /* Added to make the sections take equal space */
+    flex: 1; 
 }
 .right-section {
     margin-top: 40px;
     text-align: center;
     margin-right: 20px;
-    flex: 1; /* Added to make the sections take equal space */
+    flex: 1; 
 }
 
 .h2v,
 .h3v {
     color: #333;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .pv {
     color: #666;
     margin-bottom: 20px;
+    text-align: justify;
     line-height: 1.6;
+    margin-right: 40px;
+    
 }
 .containerImage img:hover {
     transform: scale(1.05);
 }
+
 
 
 @media (max-width: 768px) {
@@ -407,12 +412,15 @@ body {
     .left-section,
     .right-section {
         flex: 1;
-        text-align: left;
+        text-align: center;
         margin: 0 20px;
     }
 
     .right-section {
         padding-left: 0;
+    }
+    .pv{
+        margin-right: 0px;
     }
 }
 .containerImage {
