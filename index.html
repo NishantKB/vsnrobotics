@@ -41,17 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </head>
 <body>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="mclose">&times;</span>
-            <div class="modal-title">VSN Robotics</div>
-            <p>Welcome | VSN Robotics</p>
-             <!-- <img src="" alt="Image" style="max-width: 100%;"> -->
-            <!-- <a href="forms.html" class="readMoreButton">Read More</a> -->
-        </div>
-    </div>
     <section id="home">
         <div class="containerHome">
             <nav id="navbar">
@@ -306,54 +295,50 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             });
     </script> -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-    
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("mclose")[0];
-    
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    
-        // Open the modal when the page is loaded
-        window.onload = function() {
-            modal.style.display = "block";
-        }
-    
-        // Initialize EmailJS and handle form submission
-        emailjs.init({
-            publicKey: "KFASveIn4B1m_Sq0z"
-        });
-    
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            emailjs.sendForm('service_5ky7acm', 'template_gft9dsh', this)
-                .then(() => {
-                    Swal.fire({
-                        icon: "success",
-                        title: "Email has been sent successfully!",
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }, (error) => {
-                    Swal.fire({
-                        icon: "error",
-                        title: "Failed to send email.",
-                        text: 'Error: ' + error,
-                        showConfirmButton: true
-                    });
+<!-- Remove the modal code -->
+<!-- <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="mclose">&times;</span>
+    </div>
+</div> -->
+
+<script>
+    // Initialize EmailJS and handle form submission
+    emailjs.init({
+        publicKey: "KFASveIn4B1m_Sq0z"
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_5ky7acm', 'template_gft9dsh', this)
+            .then(() => {
+                Swal.fire({
+                    icon: "success",
+                    title: "Email has been sent successfully!",
+                    showCloseButton: true,
+                    confirmButtonText: "OK",
                 });
-        });
+            }, (error) => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Failed to send email.",
+                    text: "Something went wrong!",
+                    showConfirmButton: true,
+                    confirmButtonText: "OK",
+                });
+            });
+    });
+
+    // Show Swal modal when the page is loaded
+    Swal.fire({
+        title: "Welcome to VSN Robotics!",
+        icon: "info",
+        html: `
+            <p>Feel free to contact us if you have any questions or inquiries.</p>`,
+        showCloseButton: true,
+    });
+</script>
+
     
     </script>
     <script>
