@@ -713,7 +713,7 @@ body {
     max-width: 90%;
     max-height: 90%;
     margin: auto;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .close {
