@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
     <section id="home">
         <div class="containerHome">
             <nav id="navbar">
@@ -364,6 +367,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     </script>
+    <script>window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader-wrapper');
+    const content = document.querySelector('.content');
+
+    loader.style.display = 'none';
+    content.style.display = 'block';
+});
+</script>
 </body>
 </html>
 
