@@ -1438,3 +1438,48 @@ font-size: 24px;
         font-size: 12px;
     }
 }
+/* about me section few modifications*/
+.prev-exceutive {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-radius: 5px;
+}
+#prev-etitle {
+    padding-top: 40px;
+    color: #333;
+    text-align: center;
+}
+#pexecutive{
+    color: #666;
+    line-height: 1.5;
+
+}
+.preve-Selector {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.preve-Selector div {
+    padding: 15px 20px; 
+    border: 2px solid #666; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+    color: #666;
+    font-weight: bold; 
+}
+.prevbutton-Selector{
+    display: none;
+}
+.prev-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
