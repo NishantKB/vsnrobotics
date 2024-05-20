@@ -14,10 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <script src="Js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/27061a3f4a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 <!-- Swiper JS -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
@@ -101,6 +105,74 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <a href="aboutus.html" class="btnLearnMore">Know More About Us!</a>
                                     </div>
                                 </div>  
+                                <!--carousel-->
+                                <div class="carousel-container">
+                                    <h1 class="carouselTitle">Our Projects</h1>
+                                    <div class="carousel">
+                                        <div class="carousel-track">
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="images/testimage/husky.png" alt="Robotics Workshop">
+                                                </div>
+                                                <h2>Robotics Workshops</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe suscipit similique laudantium excepturi magni ullam voluptas ad vitae alias adipisci eum consequatur, quia obcaecati ducimus explicabo eaque deleniti voluptatibus aut?</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="images/testimage/medicine.png" alt="Tech Innovation Labs">
+                                                </div>
+                                                <h2>Tech Innovation Labs</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos tempore vel quisquam officiis dolor! Vero optio unde inventore dignissimos? Facilis nulla, totam vel illum doloremque libero in pariatur omnis quo.</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="images/testimage/multi-rotot-hexa.png" alt="Coding Bootcamps">
+                                                </div>
+                                                <h2>Coding Bootcamps</h2>
+                                                <p>Intensive coding programs to enhance programming skills and creativity.</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="more-image.jpg" alt="More Image">
+                                                </div>
+                                                <h2>More Services</h2>
+                                                <p>More description here.</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="more-image.jpg" alt="More Image">
+                                                </div>
+                                                <h2>More Services</h2>
+                                                <p>More description here.</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="more-image.jpg" alt="More Image">
+                                                </div>
+                                                <h2>More Services</h2>
+                                                <p>More description here.</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="more-image.jpg" alt="More Image">
+                                                </div>
+                                                <h2>More Services</h2>
+                                                <p>More description here.</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="image-container">
+                                                    <img src="more-image.jpg" alt="More Image">
+                                                </div>
+                                                <h2>More Services</h2>
+                                                <p>More description here.</p>
+                                            </div>
+                            
+                                            <!-- Additional items can be added here -->
+                                        </div>
+                                    </div>
+                                    <button class="carousel-button left" onclick="moveLeft()">&#10094;</button>
+                                    <button class="carousel-button right" onclick="moveRight()">&#10095;</button>
+                                </div>               
         <div class="containerNotice" id="notice">
             <h1 class="noticeTitle">Notice/Post Board</h1>
             <div class="noticeContainer">
@@ -109,8 +181,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="images/Happy Nepali New year.svg" alt="Article Image">
                     </div>
                     <div class="articleInfo">
-                        <h2 class="articleTitle">VSN Robotics Club wishes you a happy new year 2081! | भि.एस.एन. रोबोटिक्स क्लबले तपाईंलाई नयाँ वर्ष २०८१ को हार्दिक मंगलमय शुभकामना दिन्छौं।</h2>
-                        <p class="articlePublished">Published on April 13, 2024</p>
+                        <h2 class="articleTitle">
+                            VSN Robotics Club wishes you a happy new year 2081! | 
+                            <span class="nepali-text">भि.एस.एन. रोबोटिक्स क्लबले तपाईंलाई नयाँ वर्ष २०८१ को हार्दिक मंगलमय शुभकामना दिन्छौं।</span>
+                        </h2>                        <p class="articlePublished">Published on April 13, 2024</p>
                         <a href="https://www.facebook.com/photo/?fbid=838072445031627&set=a.529289112576630" class="readMoreButton">Click to view post</a>
                     </div>
                 </div>
@@ -213,10 +287,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="galleryItem">
                     <img src="images/gallery/gallery20.JPG" alt="Image 20">
                 </div>
+                
             </div>
+
             <div class="lightbox">
                 <span class="close">&times;</span>
                 <img class="lightboxImage" src="" alt="">
+                <div class="navigation">
+                    <button class="prevButton" onclick="prevImage()">&#10094;</button>
+                    <button class="nextButton" onclick="nextImage()">&#10095;</button>
+                </div>
             </div>
         </div>
 
@@ -304,7 +384,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <span class="mclose">&times;</span>
     </div>
 </div> -->
-
 <script>
     // Initialize EmailJS and handle form submission
     emailjs.init({
@@ -342,31 +421,91 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 </script>
 
-    
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const galleryItems = document.querySelectorAll('.galleryItem');
-            const lightbox = document.querySelector('.lightbox');
-            const lightboxImage = document.querySelector('.lightboxImage');
-            const closeBtn = document.querySelector('.close');
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const galleryItems = document.querySelectorAll('.galleryItem');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImage = document.querySelector('.lightboxImage');
+        const closeBtn = document.querySelector('.close');
+        const prevButton = document.querySelector('.prevButton');
+        const nextButton = document.querySelector('.nextButton');
 
-            galleryItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    console.log("block")
-                    const imgSrc = item.querySelector('img').src;
-                    lightboxImage.src = imgSrc;
-                    lightbox.style.display = 'flex';
-                });
-            });
-
-            closeBtn.addEventListener('click', () => {
-                console.log("none")
-                lightbox.style.display = 'none';
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                lightboxImage.src = imgSrc;
+                lightbox.style.display = 'flex';
             });
         });
 
-    </script>
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        prevButton.addEventListener('click', () => {
+            prevImage();
+        });
+
+        nextButton.addEventListener('click', () => {
+            nextImage();
+        });
+
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+            lightboxImage.src = galleryItems[index].querySelector('img').src;
+            currentImageIndex = index;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+            showImage(currentImageIndex);
+        }
+
+        // Show the first image initially
+        showImage(currentImageIndex);
+    });
+
+    let index = 0;
+
+    function showItems() {
+        const items = document.querySelectorAll('.carousel-item');
+        const track = document.querySelector('.carousel-track');
+        const totalItems = items.length;
+        const visibleItems = 3;
+
+        const itemWidth = items[0].getBoundingClientRect().width;
+        const maxIndex = totalItems - visibleItems;
+
+        if (index < 0) {
+            index = maxIndex;
+        }
+        if (index > maxIndex) {
+            index = 0;
+        }
+
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+    }
+
+    function moveLeft() {
+        index--;
+        showItems();
+    }
+
+    function moveRight() {
+        index++;
+        showItems();
+    }
+
+    // Initialize the carousel to show the first set of items
+    showItems();
+</script>
+
     <!-- 
         loader code
         <script>window.addEventListener('load', () => {

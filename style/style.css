@@ -83,7 +83,7 @@ html {
   
 /* Body styles */
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     font-style: normal;
     background-color: #f2f2f2;
@@ -97,6 +97,12 @@ body {
         padding: 10px; /* Reduce padding for smaller screens */
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap');
+
+.nepali-text {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
 /* loader*/
 .loader-wrapper {
     position: fixed;
@@ -628,7 +634,117 @@ body {
         transition: transform 0.3s ease;
     }
 }
+.carouselTitle{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 8px;
+}
 
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 30%; 
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 0; 
+
+}
+
+.carousel-item p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+@media (max-width: 768px) {
+.carousel-item {
+min-width: 100%;
+padding: 10px;
+}
+
+.carousel-button {
+font-size: 18px;
+}
+}
+
+@media (min-width: 769px) {
+.carousel-item {
+    min-width: 33.33%; 
+    padding: 20px;
+}
+
+.carousel-button {
+font-size: 24px;
+}
+}
 
 /* Notice Board */
 
@@ -834,6 +950,33 @@ body {
     right: 30px;
     cursor: pointer;
 }
+.navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    padding: 0 20px; 
+}
+
+.prevButton,
+.nextButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+.prevButton:hover,
+.nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 /* FORMS */
 
@@ -851,7 +994,7 @@ body {
 
 .formContainer {
     width: 70%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
 }
 
 .formContainer form {
