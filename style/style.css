@@ -186,8 +186,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-    
-
 }
 
 .title {
@@ -308,6 +306,11 @@ body {
     }
     .nav a{
         padding: 0;
+    }
+    .nav.show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
     }
     .title {
         display: flex;
