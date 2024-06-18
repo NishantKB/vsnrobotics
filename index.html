@@ -115,67 +115,40 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="carousel-track">
                                             <div class="carousel-item">
                                                 <div class="image-container">
-                                                    <img src="images/testimage/husky.png" alt="Robotics Workshop">
+                                                    <img src="images/projects/ally.jpeg" alt="Robotics Workshop">
                                                 </div>
                                                 <h2>Robotics Workshops</h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe suscipit similique laudantium excepturi magni ullam voluptas ad vitae alias adipisci eum consequatur, quia obcaecati ducimus explicabo eaque deleniti voluptatibus aut?</p>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="image-container">
-                                                    <img src="images/testimage/medicine.png" alt="Tech Innovation Labs">
+                                                    <img src="images/projects/tampoobot.jpeg" alt="Tech Innovation Labs">
                                                 </div>
                                                 <h2>Tech Innovation Labs</h2>
                                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos tempore vel quisquam officiis dolor! Vero optio unde inventore dignissimos? Facilis nulla, totam vel illum doloremque libero in pariatur omnis quo.</p>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="image-container">
-                                                    <img src="images/testimage/multi-rotot-hexa.png" alt="Coding Bootcamps">
+                                                    <img src="images/projects/Quadcopter.jpeg" alt="Coding Bootcamps">
                                                 </div>
                                                 <h2>Coding Bootcamps</h2>
                                                 <p>Intensive coding programs to enhance programming skills and creativity.</p>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="image-container">
-                                                    <img src="more-image.jpg" alt="More Image">
+                                                    <img src="images/projects/roborace.jpeg" alt="Coding Bootcamps">
                                                 </div>
-                                                <h2>More Services</h2>
-                                                <p>More description here.</p>
+                                                <h2>Coding Bootcamps</h2>
+                                                <p>Intensive coding programs to enhance programming skills and creativity.</p>
                                             </div>
-                                            <div class="carousel-item">
-                                                <div class="image-container">
-                                                    <img src="more-image.jpg" alt="More Image">
-                                                </div>
-                                                <h2>More Services</h2>
-                                                <p>More description here.</p>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="image-container">
-                                                    <img src="more-image.jpg" alt="More Image">
-                                                </div>
-                                                <h2>More Services</h2>
-                                                <p>More description here.</p>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="image-container">
-                                                    <img src="more-image.jpg" alt="More Image">
-                                                </div>
-                                                <h2>More Services</h2>
-                                                <p>More description here.</p>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="image-container">
-                                                    <img src="more-image.jpg" alt="More Image">
-                                                </div>
-                                                <h2>More Services</h2>
-                                                <p>More description here.</p>
-                                            </div>
-                            
+                                            
                                             <!-- Additional items can be added here -->
                                         </div>
                                     </div>
                                     <button class="carousel-button left" onclick="moveLeft()">&#10094;</button>
                                     <button class="carousel-button right" onclick="moveRight()">&#10095;</button>
                                 </div>               
+
         <div class="containerNotice" id="notice">
             <h1 class="noticeTitle">Notice/Post Board</h1>
             <div class="noticeContainer">
@@ -473,40 +446,80 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show the first image initially
         showImage(currentImageIndex);
     });
-
     let index = 0;
+const visibleItems = 3;
 
-    function showItems() {
-        const items = document.querySelectorAll('.carousel-item');
-        const track = document.querySelector('.carousel-track');
-        const totalItems = items.length;
-        const visibleItems = 3;
 
-        const itemWidth = items[0].getBoundingClientRect().width;
-        const maxIndex = totalItems - visibleItems;
+function cloneItems() {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
 
-        if (index < 0) {
-            index = maxIndex;
-        }
-        if (index > maxIndex) {
-            index = 0;
-        }
+    for (let i = 0; i < visibleItems; i++) {
+        const clone = items[i].cloneNode(true);
+        track.appendChild(clone);
+    }
 
+    for (let i = items.length - visibleItems; i < items.length; i++) {
+        const clone = items[i].cloneNode(true);
+        track.insertBefore(clone, items[0]);
+    }
+}
+
+function showItems() {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const itemWidth = items[0].getBoundingClientRect().width;
+
+    // Adjust the index for the infinite loop effect
+    if (index < 0) {
+        index = items.length - visibleItems * 2;
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                track.style.transition = 'transform 0.5s ease';
+                moveLeft();
+            });
+        });
+    } else if (index >= items.length - visibleItems) {
+        index = visibleItems;
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                track.style.transition = 'transform 0.5s ease';
+                moveRight();
+            });
+        });
+    } else {
         track.style.transform = `translateX(-${index * itemWidth}px)`;
     }
+}
 
-    function moveLeft() {
-        index--;
-        showItems();
-    }
-
-    function moveRight() {
-        index++;
-        showItems();
-    }
-
-    // Initialize the carousel to show the first set of items
+function moveLeft() {
+    index--;
     showItems();
+}
+
+function moveRight() {
+    index++;
+    showItems();
+}
+
+// Initialize the carousel
+document.addEventListener('DOMContentLoaded', () => {
+    cloneItems();
+    const items = document.querySelectorAll('.carousel-item');
+    const itemWidth = items[0].getBoundingClientRect().width;
+    const track = document.querySelector('.carousel-track');
+    index = visibleItems; 
+    track.style.transition = 'none';
+    track.style.transform = `translateX(-${index * itemWidth}px)`;
+    requestAnimationFrame(() => {
+        track.style.transition = 'transform 0.5s ease';
+    });
+});
+
 </script>
 
     <!-- 

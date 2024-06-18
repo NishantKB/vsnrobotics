@@ -637,6 +637,8 @@ body {
         transition: transform 0.3s ease;
     }
 }
+
+/* Carousel **/
 .carouselTitle{
     text-align: center;
     font-size: 2em;
