@@ -448,8 +448,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     let index = 0;
 const visibleItems = 3;
-
-
+let intervalId;
 function cloneItems() {
     const track = document.querySelector('.carousel-track');
     const items = document.querySelectorAll('.carousel-item');
@@ -505,13 +504,25 @@ function moveRight() {
     index++;
     showItems();
 }
+function startAutoMove() {
+    intervalId = setInterval(() => {
+        moveRight();
+    }, 3000); // Move right every 3 seconds 
+}
+
+function stopAutoMove() {
+    clearInterval(intervalId);
+}
 
 // Initialize the carousel
 document.addEventListener('DOMContentLoaded', () => {
     cloneItems();
+    startAutoMove();
     const items = document.querySelectorAll('.carousel-item');
     const itemWidth = items[0].getBoundingClientRect().width;
     const track = document.querySelector('.carousel-track');
+    track.addEventListener('mouseenter', stopAutoMove); // Stop auto-move on hover
+    track.addEventListener('mouseleave', startAutoMove); // Resume auto-move on mouse leave
     index = visibleItems; 
     track.style.transition = 'none';
     track.style.transform = `translateX(-${index * itemWidth}px)`;
