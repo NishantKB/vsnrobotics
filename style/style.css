@@ -89,6 +89,8 @@ body {
     background-color: #f2f2f2;
 }
 
+
+
 .containerAbout {
     padding: 20px;
 }
@@ -639,7 +641,7 @@ body {
 }
 
 /* Carousel **/
-.carouselTitle{
+.carouselTitle {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
@@ -652,7 +654,7 @@ body {
 }
 
 .carousel-container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -669,23 +671,25 @@ body {
 }
 
 .carousel-item {
-    min-width: 30%; 
+    min-width: 30%;
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .image-container {
-    width: 100%;
-    padding-top: 100%; 
+    width: 80%;
+    padding-top: 80%; 
     position: relative;
     overflow: hidden;
     border-radius: 50%;
     background-color: #fff;
+    flex-shrink: 0;
 }
 
 .image-container img {
@@ -701,13 +705,18 @@ body {
 .carousel-item h2 {
     color: #333;
     margin-top: 20px;
-    margin-bottom: 0; 
-
+    margin-bottom: 10px;
+    min-height: 40px;
+    line-height: 40px;
 }
 
 .carousel-item p {
     color: #666;
     margin: 10px 0;
+    overflow: visible; 
+    display: block;
+    text-align: justify; 
+    max-height: none; 
 }
 
 .carousel-button {
@@ -729,26 +738,27 @@ body {
 .carousel-button.right {
     right: 10px;
 }
-@media (max-width: 768px) {
-.carousel-item {
-min-width: 100%;
-padding: 10px;
-}
 
-.carousel-button {
-font-size: 18px;
-}
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .carousel-button {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 769px) {
-.carousel-item {
-    min-width: 33.33%; 
-    padding: 20px;
-}
+    .carousel-item {
+        min-width: 33.33%;
+        padding: 20px;
+    }
 
-.carousel-button {
-font-size: 24px;
-}
+    .carousel-button {
+        font-size: 24px;
+    }
 }
 
 /* Notice Board */
