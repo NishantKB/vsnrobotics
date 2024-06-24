@@ -257,7 +257,7 @@ body {
     height: 2px;
     bottom: -2px; 
     left: 0;
-    background-color: #194EA2;
+    background-color: #007bff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -268,7 +268,7 @@ body {
 }
 
 .nav a:hover {
-    color: #194EA2; /* Change color on hover */
+    color: #007bff; /* Change color on hover */
 }
 
 
