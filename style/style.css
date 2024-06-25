@@ -829,6 +829,14 @@ body {
     color: #333;
 
 }
+.articleInfo{
+    transition: transform 0.3s ease;
+
+}
+.articleInfo:hover{
+    transform: scale(1.1);
+}
+
 .articlePublished {
     margin-bottom: 10px;
     color: #666;
